@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USIU First-Year Companion (v1)</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>USIU First-Year Companion</h1>
+        <p>Your guide to campus life</p>
+    </header>
+    <main>
+        <section class="greeting-section">
+            <h2 id="greeting">Hello!</h2>
+            <p>Welcome to your quick orientation helper for navigating USIU campus life.</p>
+            <div class="button-group">
+                <button id="run">Run Estimator</button>
+                <button id="theme">Toggle Theme</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+        <section class="estimator-section">
+            <h3>Weekly Campus Cost Estimator</h3>
+            <p>Calculate your weekly expenses for transport and snacks at USIU.</p>
+            <div id="summary-container">
+                <h4>Weekly Summary</h4>
+                <pre id="summary">Run the estimator to see your weekly plan…</pre>
+            </div>
+        </section>
+        <section class="tips-section">
+            <h3>Campus Tips</h3>
+            <ul>
+                <li>Consider carpooling with classmates to reduce transport costs</li>
+                <li>The USIU cafeteria offers meal plans that can save you money</li>
+                <li>Student ID gets you discounts at selected campus vendors</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <small>© USIU Student Affairs (Demo v1) | Generated for: <span id="student-id">STUDENT_ID</span></small>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Wire up minimal interactions (also shows internal script usage)
+        document.getElementById("run").addEventListener("click", runEstimator);
+        document.getElementById("theme").addEventListener("click", toggleTheme);
+        document.getElementById("reset").addEventListener("click", resetSummary);
+    </script>
+</body>
+</html>
